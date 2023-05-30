@@ -1,0 +1,20 @@
+<div class="container mt-5 mb-5">
+  <h1 class="title">Entre em contato</h1>
+  <form class="form" (ngSubmit)="submit()" [formGroup]="formulario">
+    <label>
+      <input
+        type="text"
+        formControlName="name"
+        placeholder="Seu nome"
+        required
+      />
+    </label>
+    <label>
+      <input type="email" placeholder="Digite seu e-mail" required />
+    </label>
+    <label>
+      <textarea placeholder="Deixe sua mensagem" required></textarea>
+    </label>
+    <button class="button" type="submit">Enviar</button>
+  </form>
+</div>
